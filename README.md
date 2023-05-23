@@ -11,7 +11,7 @@ Build project:
 
 Docker build:
 ```sh
-docker build --build-arg JAR_FILE=build/libs/hb-ecommerce-0.0.1-SNAPSHOT.jar -t hbecommerce .
+docker build --build-arg JAR_FILE=build/libs/hb-ecommerce-0.1.0.jar -t hbecommerce .
 ```
 
 Docker run:
