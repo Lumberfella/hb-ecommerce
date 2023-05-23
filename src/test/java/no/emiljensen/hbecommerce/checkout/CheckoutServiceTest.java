@@ -5,7 +5,6 @@ import no.emiljensen.hbecommerce.watch.WatchRepository;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -38,7 +37,7 @@ public class CheckoutServiceTest {
         List<String> watchIds = List.of("001", "002", "001", "004", "003");
 
         when(watchRepository.findAllById(watchIds))
-                .thenReturn(Arrays.asList(watch1, watch2, watch4, watch3));
+                .thenReturn(List.of(watch1, watch2, watch4, watch3));
 
         Integer result = CheckoutService.getCheckoutPrice(watchIds);
 
